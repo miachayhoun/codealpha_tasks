@@ -1,0 +1,49 @@
+body {
+    font-family: Arial;
+    background: #381402;
+    color: white;
+    text-align: center;
+}
+*{cursor: url("pointerw.png") 16 16,auto;
+}
+
+input, button {
+    padding: 8px;
+    margin: 10px;
+    background-color: black;
+    border:none;
+    color:white;
+    border-radius: 5px;
+}
+
+
+
+.board {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.column {
+    width: 28%;
+    min-height: 300px;
+    background: #540505cf;
+    padding: 10px;
+    border-radius: 10px;
+}
+.task {
+    background: #ff575788;
+    color: black;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: grab;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task span {
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+}

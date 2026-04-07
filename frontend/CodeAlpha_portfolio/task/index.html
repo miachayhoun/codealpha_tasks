@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drag & Drop Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Task Board</h1>
+<input type="text" id="taskInput" placeholder="Enter a task...">
+<button onclick="addTask()">Add Task</button>
+
+<div class="board">
+
+    <div class="column" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h3>To Do</h3>
+    </div>
+
+    <div class="column" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h3>In Progress</h3>
+    </div>
+
+    <div class="column" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h3>Done</h3>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
