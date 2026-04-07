@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="screen">
+        <div class="content">
+           <nav>
+            <img src="images/win.png" class="win" alt="window">
+            
+            <div class="b">
+           <img src="images/h22.png" alt="battery">
+            <p class="bat">battery 100%</p>
+            </div>
+           <!--date and time using java -->
+           <div class="text">
+           <p id="time"></p>
+           <p id="date"></p>
+            </div>
+           </nav>
+        <div class="c">
+            <p class="typing" id="typing"></p> 
+        </div>
+        <div class="folders">
+            <div class="musicplayer">
+            <figure>
+             <img src="images/folder.png" onclick="openWindow(this)">
+             <figcaption>music <br>player</figcaption>
+            </figure>
+             <div class="window">
+             <button class="close-btn" onclick="closeWindow(this)">✖</button>
+             <iframe src="audioplayer/index.html"></iframe>
+            </div>
+            </div>
+
+            <div class="calculator">
+            <figure>
+             <img src="images/folder.png" onclick="openWindow(this)">
+             <figcaption>calculator</figcaption>
+            </figure>
+             <div class="window">
+             <button class="close-btn" onclick="closeWindow(this)">✖</button>
+             <iframe src="calculator/index.html"></iframe>
+            </div>
+            </div>
+
+            <div class="converter">
+            <figure>
+             <img src="images/folder.png" onclick="openWindow(this)">
+             <figcaption>converter</figcaption>
+            </figure>
+             <div class="window">
+             <button class="close-btn" onclick="closeWindow(this)">✖</button>
+             <iframe src="converter/index.html"></iframe>
+            </div>
+            </div>
+
+            <div class="game">
+            <figure>
+             <img src="images/folder.png" onclick="openWindow(this)">
+             <figcaption>game</figcaption>
+            </figure>
+            <div class="window">
+             <button class="close-btn" onclick="closeWindow(this)">✖</button>
+             <iframe src="game/index.html"></iframe>
+            </div>
+            </div>
+
+             <div class="window">
+             <button class="close-btn" onclick="closeWindow(this)">✖</button>
+             <iframe src="game/index.html"></iframe>
+            </div>
+
+            <div class="task">
+            <figure>
+             <img src="images/folder.png" onclick="openWindow(this)">
+             <figcaption>task</figcaption>
+            </figure>
+             <div class="window">
+             <button class="close-btn" onclick="closeWindow(this)">✖</button>
+             <iframe src="task/index.html"></iframe>
+            </div>
+            </div>
+
+        </div>
+    <section class="contact">
+    <div id="g">
+    <a href="https://github.com/miachayhoun" target="_blank">
+      <figure>
+        <img  class="gi" src="images/gitt.png">
+        <figcaption>GitHub</figcaption>
+      </figure>
+    </a>
+    </div>
+
+    <div id="l"> 
+        <a href="www.linkedin.com/in/mia-chayhoun" target="_blank">
+      <figure>
+        <img class="li" src="images/linkedin.png">
+        <figcaption>linkedin</figcaption>
+      </figure>
+    </a>
+    </div>
+
+    <div id="e">
+        <a href="mailto:miachayhoun3rd@gmail.com" target="_blank">
+        <figure>
+        <img class="ei" src="images/gmail.png">
+        <figcaption>Email Me</figcaption>
+        </figure>
+        </a>
+    </div>
+    <div class="window">
+    <button class="close-btn" onclick="closeWindow()">✖</button>
+    </div>
+
+    </section>
+    
+    <div class="about">
+    <figure>
+        <img src="images/folder.png" onclick="openWindow(this)">
+        <figcaption>about me</figcaption>
+    </figure>
+
+    <div class="window">
+        <button class="close-btn" onclick="closeWindow(this)">✖</button>
+        <iframe src="about/index.html"></iframe>
+    </div>
+</div>
+    </section>
+    <script src="script.js"></script> 
+</body>
+</html>
