@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="player" id="musicPlayer">
+        <div class="volume">
+            <label></label>
+            <div class="volume-track">
+                <div class="volume-fill" id="volumeFill"></div>
+                <div class="volume-thumb" id="volumeThumb"></div>
+            </div>
+        </div>
+        <div class="cover-progress-wrapper">
+            <div class="cover-container">
+                <img src="images/one-of-the-girls.jpg" alt="music cover" id="songCover">
+            </div>
+            <div class="song-info">
+                <h4 id="songTitle">One of the Girls</h4>
+            </div>
+            <div class="progress-wrapper">
+                <span id="currentTime">0:00</span>
+                <div id="progressBarContainer">
+                    <div id="progressBar"></div>
+                </div>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+        <div class="player-controls">
+            <button id="previousBtn">⏮</button>
+            <button id="playPauseBtn">▶</button>
+            <button id="nextBtn">⏭</button>
+        </div>
+        <audio src="music/one-of-the-girls.mp3" id="audioPlayer"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
