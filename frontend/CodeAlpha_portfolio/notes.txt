@@ -1,0 +1,16 @@
+Hi 👋
+
+Welcome to my portfolio!
+
+I am learning web development and building interactive projects.
+
+Skills:
+- HTML
+- CSS
+- JavaScript
+
+Projects:
+- Calculator
+- Game
+- Task Board
+- Desktop UI
