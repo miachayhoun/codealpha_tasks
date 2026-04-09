@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    overflow: hidden;
+    cursor: url("pointerw.png") 16 16, auto;
+}
+.main {
+    width: 95%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+h1 {
+    text-align: center;
+    color: #5a2a3a;
+}
+#container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.box {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.box h2 {
+    margin-bottom: 10px;
+    color: #5a2a3a;
+}
+#markdown-input,
+#html-output,
+#preview {
+    width: 100%;
+    height: 150px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #fff;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+#html-output::-webkit-scrollbar,
+#preview::-webkit-scrollbar,
+#markdown-input::-webkit-scrollbar {
+    display: none;
+}
+@media (min-width: 700px) {
+    #container {
+        flex-direction: row;
+    }
+    .box {
+        width: 33%;
+    }
+}
