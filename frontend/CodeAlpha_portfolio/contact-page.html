@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Me</title>
+
+<style>
+body {
+    font-family: 'Fira Code', monospace;
+    background: #bedac2; 
+    color: #033d1f; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    overflow-y: scroll;   
+    cursor: url("images/pointerw.png") 16 16, auto;
+}
+
+.card {
+    background: #e8f4eb; 
+    padding: 30px;
+    border: 2px solid #256e48; 
+    box-shadow: 6px 6px 0 #10301d;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.email {
+    font-size: 18px;
+    margin: 15px 0;
+    background: #f3fff7;
+    padding: 10px;
+    border: 1px solid #1e3b03;
+    color: #065f3c;
+    border-radius: 8px;
+
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: 2px solid #094124;
+    background: #549b77;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 7px;
+    font-family: 'Fira Code', monospace;
+     cursor: url("images/pointerw.png") 16 16, auto;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+</style>
+</head>
+<body>
+<div class="card">
+    <h2> Contact me!</h2>
+    <p>Copy my email below:</p>
+    <div class="email" id="email">
+        miachayhoun3rd@gmail.com
+    </div>
+    <button onclick="copyEmail()">📋 Copy Email</button>
+</div>
+<script>
+function copyEmail() {
+    const email = document.getElementById("email").innerText;
+    navigator.clipboard.writeText(email);
+    alert("Email copied!");
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <section class="screen">
+        <div class="content">
+           <nav>
+            <img src="images/win.png" class="win" alt="window">
+            
+            <div class="b">
+           <img src="images/h22.png" alt="battery">
+            <p class="bat">battery 100%</p>
+            </div>
+           <!--date and time using java -->
+           <div class="text">
+           <p id="time"></p>
+           <p id="date"></p>
+            </div>
+           </nav>
+        <div class="c">
+            <p class="typing" id="typing"></p> 
+        </div>
+        <div class="folders">
+            <div class="musicplayer">
+            <figure>
+             <img src="images/folder.png" onclick="openWindow(this)">
+             <figcaption>music <br>player</figcaption>
+            </figure>
+             <div class="window">
+             <button class="close-btn" onclick="closeWindow(this)">✖</button>
+             <iframe src="audioplayer/index.html"></iframe>
+            </div>
+            </div>
+
+            <div class="calculator">
+            <figure>
+             <img src="images/folder.png" onclick="openWindow(this)">
+             <figcaption>calculator</figcaption>
+            </figure>
+             <div class="window">
+             <button class="close-btn" onclick="closeWindow(this)">✖</button>
+             <iframe src="calculator/index.html"></iframe>
+            </div>
+            </div>
+
+            <div class="converter">
+            <figure>
+             <img src="images/folder.png" onclick="openWindow(this)">
+             <figcaption>converter</figcaption>
+            </figure>
+             <div class="window">
+             <button class="close-btn" onclick="closeWindow(this)">✖</button>
+             <iframe src="converter/index.html"></iframe>
+            </div>
+            </div>
+
+            <div class="game">
+            <figure>
+             <img src="images/folder.png" onclick="openWindow(this)">
+             <figcaption>game</figcaption>
+            </figure>
+            <div class="window">
+             <button class="close-btn" onclick="closeWindow(this)">✖</button>
+             <iframe src="game/index.html"></iframe>
+            </div>
+            </div>
+
+             <div class="window">
+             <button class="close-btn" onclick="closeWindow(this)">✖</button>
+             <iframe src="game/index.html"></iframe>
+            </div>
+
+            <div class="task">
+            <figure>
+             <img src="images/folder.png" onclick="openWindow(this)">
+             <figcaption>task</figcaption>
+            </figure>
+             <div class="window">
+             <button class="close-btn" onclick="closeWindow(this)">✖</button>
+             <iframe src="task/index.html"></iframe>
+            </div>
+            </div>
+
+        </div>
+    <section class="contact">
+    <div id="g">
+    <a href="https://github.com/miachayhoun" target="_blank">
+      <figure>
+        <img  class="gi" src="images/github.png">
+        <figcaption>GitHub</figcaption>
+      </figure>
+    </a>
+    </div>
+
+    <div id="l"> 
+        <a href="https://www.linkedin.com/in/mia-chayhoun/" target="_blank">
+      <figure>
+        <img class="li" src="images/linkedin.png">
+        <figcaption>linkedin</figcaption>
+      </figure>
+    </a>
+    </div>
+
+<div class="e" id="e">
+    <figure onclick="openWindow(this)">
+        <img src="images/mail.png">
+        <figcaption>Email Me</figcaption>
+    </figure>
+
+    <div class="window">
+        <button class="close-btn" onclick="closeWindow(this)">✖</button>
+
+        <iframe src="contact-page.html"></iframe>
+    </div>
+</div>
+    </section>
+    
+    <div class="readm">
+    <figure>
+        <img src="images/abtme.png" onclick="openWindow(this)">
+        <figcaption>READ ME</figcaption>
+    </figure>
+
+   <div class="window">
+    <button class="close-btn" onclick="closeWindow(this)">✖</button>
+
+    <div class="readme">
+        <h1>Hi!</h1>
+        <p>
+            Welcome to my portfolio! I'm a passionate developer who loves building interactive and creative projects.
+        </p>
+        <h2>✩ Skills</h2>
+        <ul>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>HTML & CSS</li>
+            <li>Python</li>
+        </ul>
+        <h2>✩ Projects</h2>
+        <ul>
+            <li>Calculator App</li>
+            <li>Music Player</li>
+            <li>Converter Tool</li>
+            <li>Mini Game</li>
+            <li>Task Manager</li>
+        </ul>
+
+        <h2>✩ Goals</h2>
+        <p>
+            My goal is to become a full-stack developer and build real-world applications that solve problems and look great.
+        </p>
+
+        <h2>✩ About Me</h2>
+        <p>
+            Based in Lebanon.<br>
+            I enjoy coding, learning new technologies, and improving my design skills.
+        </p>
+        <hr>
+        <p style="font-size:12px;">
+            This portfolio was built using HTML, CSS, and JavaScript &lt;3
+        </p>
+    </div>
+</div>
+</div>
+    </section>
+    <script src="script.js"></script> 
+</body>
+</html>
